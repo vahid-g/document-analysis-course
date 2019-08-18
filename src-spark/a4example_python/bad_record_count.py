@@ -31,8 +31,8 @@ if __name__ == "__main__":
     is_ec2 = False
     # If the submission is on EC2, you need to set access key and secret access key
     if is_ec2:
-        hadoop_conf["fs.s3n.awsAccessKeyId"] = "AKIAJCDSXTLDPIQNVGZA"
-        hadoop_conf["fs.s3n.awsSecretAccessKey"] = "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"
+        hadoop_conf["fs.s3n.awsAccessKeyId"] = ""
+        hadoop_conf["fs.s3n.awsSecretAccessKey"] = ""
 
     # Read the file with the function newAPIHadoopFile. The RDD object has elements like this: <lineNumber, textOfTweet>. 
     # With the function textFile in the Word Count example, the hadoopConf can not be passed in. 
